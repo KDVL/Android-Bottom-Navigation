@@ -164,6 +164,10 @@ Customize with xml
 | space_item_text_size | item text size |
 | centre_button_icon | allow changing center icon from layout |
 | draw_bezier_view | if true (default) draw the bezier view around rounded button |
+ 
+draw_bezier_view is true /   draw_bezier_view is false
+
+![](examples/draw_bezier_view.png)
 
 Change space navigation background
 ```java
