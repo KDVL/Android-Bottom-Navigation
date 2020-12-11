@@ -8,3 +8,4 @@
 
 - Androidx use
 - Added draw_bezier_view parameter
+- Added setInitalSelectedItem
