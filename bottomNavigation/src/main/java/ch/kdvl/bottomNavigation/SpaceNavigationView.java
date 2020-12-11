@@ -112,6 +112,8 @@ public class SpaceNavigationView extends RelativeLayout {
 
     private int centreButtonRippleColor = NOT_DEFINED;
 
+    private int initalSelectedItem = 0;
+
     private boolean drawBezierView = true;
 
     private int currentSelectedItem = 0;
@@ -392,6 +394,11 @@ public class SpaceNavigationView extends RelativeLayout {
          * Adding current space items to left and right content
          */
         addSpaceItems(leftContent, rightContent);
+
+        /**
+         * update space item
+         */
+        updateSpaceItems(initalSelectedItem);
     }
 
     /**
@@ -634,6 +641,15 @@ public class SpaceNavigationView extends RelativeLayout {
                 currentSelectedItem = restoredBundle.getInt(CURRENT_SELECTED_ITEM_BUNDLE_KEY, 0);
         }
     }
+
+    /**
+     * set inital selected item
+     * @param selectedItem
+     */
+    public void setInitalSelectedItem(int selectedItem){
+        this.initalSelectedItem = selectedItem;
+    }
+
 
     /**
      * Restore available badges from saveInstance
