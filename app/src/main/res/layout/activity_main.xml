@@ -8,13 +8,14 @@
 
     <ch.kdvl.bottomNavigation.SpaceNavigationView
         android:id="@+id/nav_view"
-        app:active_item_color="@color/badge_background_color"
-        app:active_centre_button_background_color="@color/badge_background_color"
-        app:inactive_item_color="@color/white"
-        app:inactive_centre_button_icon_color="@color/white"
-        app:centre_button_color="@color/centre_button_color"
-        app:space_background_color="@color/default_active_item_color"
-        app:centre_button_icon="@drawable/ic_home_black_24dp"
+        app:active_item_color="@color/white"
+        app:inactive_item_color="@color/inactive_tab"
+        app:active_centre_button_icon_color="@color/white"
+        app:inactive_centre_button_icon_color="@color/inactive_tab"
+        app:centre_button_color="@color/middle_button"
+        app:active_centre_button_background_color="@color/middle_button"
+        app:space_background_color="@color/custom_red"
+        app:centre_button_icon="@drawable/ic_tab_home"
 
         app:draw_bezier_view="false"
 
